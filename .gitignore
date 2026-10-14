@@ -1,0 +1,18 @@
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Local environment files
+.env
+.env.*
+!.env.example
+
+# Editor and IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Local preview/runtime files
+*.log
+__pycache__/
