@@ -123,7 +123,7 @@ section.band> .wrap>h2::after,section.band> .wrap>.split h2::after{content:"";di
 
 /* Facts, values and diagrams */
 ul.facts{display:block;width:100%;max-width:none;margin:24px 0 0;padding:0;list-style:none}
-ul.facts li{position:relative;padding:12px 0 12px 26px;border-bottom:1px solid var(--line);color:var(--muted);line-height:1.6}
+ul.facts li{position:relative;padding:12px 0 12px 26px;color:var(--muted);line-height:1.6}
 ul.facts li::before{content:"";position:absolute;top:22px;left:2px;width:7px;height:7px;border-radius:50%;background:var(--gold)}
 ul.facts li b{color:var(--navy);font-weight:600}
 .facts+.blurb{margin-top:36px}
@@ -389,3 +389,8 @@ section.band .cards+.cta-row{margin-top:30px}
 
 /* Keep the learners' faces visible in the portrait selected for Why MANIFEST. */
 .photo-row img[src$="smf-2026-mahambo-17-14-00-1.jpg"]{object-position:center 20%}
+
+/* Gallery photographs are unique to this page and carry visible collection captions. */
+.gallery-page .ph a{height:auto}
+.gallery-page .ph figcaption{min-height:48px;padding:12px 14px;background:#fff;border-top:1px solid var(--line);color:var(--navy);font-size:.8rem;font-weight:600;letter-spacing:.015em;line-height:1.4}
+.gallery-page .coll{scroll-margin-top:calc(var(--header-height) + 24px)}
