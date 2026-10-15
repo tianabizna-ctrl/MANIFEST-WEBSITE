@@ -177,7 +177,7 @@ ul.facts li b{color:var(--navy);font-weight:600}
 .loc-place{color:var(--muted);font-size:.9rem;font-weight:400}
 .loc-body{padding:0 26px 26px}
 .loc-body .blurb{margin-top:0}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:16px;margin:18px 0 40px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:16px;margin:18px 0 40px}
 .ph{position:relative;margin:0;overflow:hidden;border-radius:12px;background:#edf0f2;box-shadow:0 5px 15px rgba(16,45,77,.07)}
 .ph a{display:block;height:100%}
 .ph img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;object-position:center;transition:transform .45s ease,filter .45s ease}
