@@ -390,7 +390,6 @@ section.band .cards+.cta-row{margin-top:30px}
 /* Keep the learners' faces visible in the portrait selected for Why MANIFEST. */
 .photo-row img[src$="smf-2026-mahambo-17-14-00-1.jpg"]{object-position:center 20%}
 
-/* Gallery photographs are unique to this page and carry visible collection captions. */
-.gallery-page .ph a{height:auto}
-.gallery-page .ph figcaption{min-height:48px;padding:12px 14px;background:#fff;border-top:1px solid var(--line);color:var(--navy);font-size:.8rem;font-weight:600;letter-spacing:.015em;line-height:1.4}
+/* Gallery photographs are unique to this page and share one heading per collection. */
 .gallery-page .coll{scroll-margin-top:calc(var(--header-height) + 24px)}
+.gallery-page .coll h3{margin-bottom:18px;font-size:clamp(1.15rem,2vw,1.35rem)}
