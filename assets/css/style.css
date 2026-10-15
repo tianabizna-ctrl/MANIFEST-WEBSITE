@@ -304,3 +304,60 @@ a[data-lb]:focus-visible{outline-offset:6px}
   .tile{height:230px}
   .grid{grid-template-columns:1fr}
 }
+
+/* Editorial meaning statement — About */
+.meaning-hero{position:relative;overflow:hidden;padding:104px 0;background:
+  radial-gradient(circle at 86% 14%,rgba(215,161,58,.16) 0 1px,transparent 2px) 0 0/24px 24px,
+  linear-gradient(135deg,var(--navy-2) 0%,var(--navy) 58%,#1a466f 100%);color:#fff;scroll-margin-top:calc(var(--header-height) + 24px)}
+.meaning-hero::before{content:"";position:absolute;top:-230px;right:-170px;width:650px;height:650px;border:1px solid rgba(240,204,122,.22);border-radius:50%;box-shadow:0 0 0 46px rgba(240,204,122,.035),0 0 0 96px rgba(240,204,122,.02)}
+.meaning-hero::after{content:"";position:absolute;bottom:0;left:0;width:41%;height:5px;background:linear-gradient(90deg,var(--gold),var(--gold-light),transparent)}
+.meaning-layout{position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,.86fr) minmax(520px,1.14fr);gap:78px;align-items:center}
+.meaning-intro{max-width:520px}
+.meaning-eyebrow{margin-bottom:24px;color:var(--gold-light);font-size:.78rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase}
+.meaning-hero h1{margin-bottom:26px;color:#fff;font-size:clamp(3.3rem,6.3vw,6rem);line-height:.96;letter-spacing:-.055em}
+.meaning-lead{max-width:500px;color:rgba(255,255,255,.84);font-size:1.15rem;line-height:1.72}
+.meaning-scripture{display:block;max-width:470px;margin-top:34px;padding:18px 0 0;border-top:1px solid rgba(255,255,255,.19);color:rgba(255,255,255,.67);font-size:.9rem;font-style:italic;line-height:1.65}
+.meaning-scripture b{color:var(--gold-light);font-style:normal;font-weight:600}
+.meaning-cards{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.meaning-card,.meaning-summary{position:relative;min-height:152px;padding:27px 28px;border:1px solid rgba(255,255,255,.15);border-radius:15px;background:rgba(255,255,255,.075);box-shadow:0 18px 45px rgba(7,26,45,.16);backdrop-filter:blur(8px)}
+.meaning-card::before{content:"";position:absolute;top:0;left:28px;width:34px;height:3px;background:var(--gold)}
+.meaning-word{display:block;margin-bottom:14px;color:var(--gold-light);font-size:.78rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase}
+.meaning-card p{margin:0;color:rgba(255,255,255,.78);font-size:1rem;line-height:1.55}
+.meaning-card strong{color:#fff;font-weight:600}
+.meaning-summary{grid-column:1/-1;display:grid;grid-template-columns:170px 1fr;gap:26px;align-items:center;min-height:0;padding:28px 30px;border-color:rgba(240,204,122,.4);background:linear-gradient(110deg,rgba(215,161,58,.18),rgba(255,255,255,.08))}
+.meaning-summary span{color:var(--gold-light);font-size:1.25rem;font-weight:700;letter-spacing:.18em}
+.meaning-summary p{margin:0;padding-left:26px;border-left:1px solid rgba(240,204,122,.38);color:#fff;font-size:1.05rem;line-height:1.55}
+
+/* Compact programme navigation and transitions to the full Gallery */
+.programme-nav{padding:30px 0;border-bottom:1px solid var(--line);background:var(--cream)}
+.programme-nav .wrap{display:flex;flex-wrap:wrap;gap:10px}
+.programme-nav .btn{min-height:40px;padding:9px 15px;font-size:.7rem}
+section.band .grid+.cta-row{margin-top:0}
+section.band .cards+.cta-row{margin-top:30px}
+
+@media (max-width:980px){
+  .meaning-hero{padding:88px 0}
+  .meaning-layout{grid-template-columns:1fr;gap:54px}
+  .meaning-intro{max-width:700px}
+  .meaning-lead{max-width:650px}
+}
+
+@media (max-width:640px){
+  .meaning-hero{padding:72px 0}
+  .meaning-hero h1{font-size:clamp(3rem,15vw,4.4rem)}
+  .meaning-layout{gap:40px}
+  .meaning-cards{grid-template-columns:1fr}
+  .meaning-card{min-height:0;padding:25px 24px}
+  .meaning-summary{grid-column:auto;grid-template-columns:1fr;gap:13px;padding:26px 24px}
+  .meaning-summary p{padding:15px 0 0;border-top:1px solid rgba(240,204,122,.38);border-left:0}
+  .programme-nav{padding:22px 0}
+  .programme-nav .wrap{gap:8px}
+  .programme-nav .btn{flex:1 1 auto}
+}
+
+/* A text-led mission card keeps the Nid page visually balanced without another photo. */
+.mission-text-card{justify-content:center;min-height:350px;background:linear-gradient(145deg,var(--navy),var(--navy-2));border-color:transparent}
+.mission-text-card:hover{border-color:rgba(215,161,58,.65)}
+.mission-text-card .mission-mark{padding:32px 26px 0;color:var(--gold-light);font-size:3rem;font-weight:300;line-height:1}
+.mission-text-card h3{color:#fff}
+.mission-text-card p{color:rgba(255,255,255,.72)}
