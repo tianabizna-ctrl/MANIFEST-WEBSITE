@@ -386,3 +386,6 @@ section.band .cards+.cta-row{margin-top:30px}
   .pathway-reach{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
   #life-skills .card img{height:235px}
 }
+
+/* Keep the learners' faces visible in the portrait selected for Why MANIFEST. */
+.photo-row img[src$="smf-2026-mahambo-17-14-00-1.jpg"]{object-position:center 20%}
