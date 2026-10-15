@@ -452,3 +452,17 @@ section.band .cards+.cta-row{margin-top:30px}
   .about-page .vision-reach{gap:10px}
   .about-page .vision-model-caption{margin-top:27px}
 }
+
+/* Preserve the original About wording inside the photographic cards. */
+.about-page .about-card-band .about-photo-card{min-height:720px}
+.about-page .about-photo-card-content .card-intro{margin:12px 0 6px;color:rgba(255,255,255,.92);font-size:.94rem;line-height:1.45}
+.about-page .about-photo-card-content .about-card-facts{margin:4px 0 10px}
+.about-page .about-photo-card-content .about-card-facts li{padding:4px 0 4px 18px;color:rgba(255,255,255,.9);font-size:.9rem;line-height:1.38}
+.about-page .about-photo-card-content .about-card-facts li::before{top:13px;left:1px;width:5px;height:5px;background:var(--gold-light)}
+.about-page .about-photo-card-content .about-card-facts li b{color:#fff}
+.about-page .about-photo-card-content .dream-close{margin:12px 0 0;color:#fff;font-size:1rem;line-height:1.4}
+.about-page .about-promise-text{color:#fff!important;font-size:clamp(1.12rem,1.7vw,1.35rem)!important;font-weight:600;line-height:1.5!important}
+
+@media (max-width:640px){
+  .about-page .about-card-band .about-photo-card{min-height:680px}
+}
