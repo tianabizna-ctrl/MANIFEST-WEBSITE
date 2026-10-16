@@ -71,6 +71,7 @@ button,input{font:inherit}
 .btn-ghost-dark{border-color:var(--navy);color:var(--navy)}
 .btn-ghost-dark:hover{background:var(--navy);color:#fff}
 .nav-cta{flex:none;min-height:42px;padding-inline:18px}
+.mobile-donate{display:none}
 
 /* Type and hero sections */
 h1,h2,h3,h4{margin-top:0;font-family:Jost,system-ui,sans-serif;font-weight:600;letter-spacing:-.035em;line-height:1.14;color:var(--navy)}
@@ -250,6 +251,8 @@ a[data-lb]:focus-visible{outline-offset:6px}
   .main-nav>a,.main-nav>.nav-group{width:100%}
   .main-nav>a{padding:13px 0;border-bottom:1px solid var(--line)}
   .main-nav>a::after{display:none}
+  .main-nav>.mobile-donate{display:flex;align-items:center;justify-content:center;margin:10px 0 4px;padding:13px 18px;border:1px solid var(--gold);border-radius:4px;background:var(--gold);color:var(--navy-2);font-weight:700;letter-spacing:.075em;text-transform:uppercase}
+  .main-nav>.mobile-donate:hover{background:var(--gold-light);color:var(--navy-2)}
   .nav-group{width:100%}
   .nav-parent{width:100%;justify-content:space-between;padding:13px 0;border-bottom:1px solid var(--line)}
   .nav-parent::after{display:none}
